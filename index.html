@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Void-Corp Coupon Acceptance</title>
+  <style>
+    body {
+      background-color: #0b0b0e;
+      color: #e4e4e4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      background-color: #1a1a1f;
+      border: 2px solid #00f7ff;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      box-shadow: 0 0 20px #00f7ff33;
+    }
+
+    h1 {
+      color: #00f7ff;
+      margin-bottom: 20px;
+    }
+
+    .coupon {
+      font-size: 1.2em;
+      background-color: #292932;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px dashed #00f7ff;
+      margin-bottom: 25px;
+    }
+
+    .accept-btn {
+      background-color: #00f7ff;
+      color: #0b0b0e;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .accept-btn:hover {
+      background-color: #00b7cc;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Void-Corp™ Coupon Acceptance</h1>
+    <p class="coupon">Coupon: <strong>LIFETIME-ATOMICS</strong></p>
+    <p>You are redeeming a Lifetime Supply of <strong>Void-Corp Atomics Dark Matter Fuel Cells</strong><br>for the discounted price of <strong>$12.99</strong>.</p>
+    <button class="accept-btn" onclick="acceptCoupon()">Accept Coupon</button>
+    <p class="note">This action is final. You cannot unbind from the Void-Corp contract after submission.</p>
+  </div>
+
+  <script>
+    function acceptCoupon() {
+      alert("Coupon accepted. Shipment of fuel cells initiated.\nYou are now bound to Void-Corp™ Eternal Customer Agreement #8292-B.");
+    }
+  </script>
+</body>
+</html>
