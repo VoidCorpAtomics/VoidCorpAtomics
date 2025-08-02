@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Voids Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 2px solid #0ff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: #0f0f0f;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #0ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .content {
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .team-member {
+            text-align: center;
+            background: #1a1a1a;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            background: #0f0f0f;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>Voids Electronics</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Founded in 1982, Voids Electronics has been at the forefront of experimental computing hardware, pioneering advances in silicon and dark matter integration.</p>
+        <p>Our mission is simple: to explore the unknown. From high-performance processors to energy solutions born from the void itself, our products redefine the limits of what technology can achieve.</p>
+        <p>With a dedicated team of engineers, scientists, and visionaries, Voids Electronics continues to innovate for industries ranging from advanced computing to deep-sea research laboratories.</p>
+        
+        <h2>Our Leadership</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=CEO" alt="CEO">
+                <h4>Dr. Elias Vorn</h4>
+                <p>Chief Executive Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=CTO" alt="CTO">
+                <h4>Lucia Krenn</h4>
+                <p>Chief Technology Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=COO" alt="COO">
+                <h4>Victor Halse</h4>
+                <p>Chief Operations Officer</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Voids Electronics. All rights reserved. | Terms | Privacy | Careers
+    </div>
+</body>
+</html>
