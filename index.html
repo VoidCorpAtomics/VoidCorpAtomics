@@ -1,76 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Void-Corp Coupon Acceptance</title>
-  <style>
-    body {
-      background-color: #0b0b0e;
-      color: #e4e4e4;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .container {
-      background-color: #1a1a1f;
-      border: 2px solid #00f7ff;
-      border-radius: 12px;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 30px;
-      box-shadow: 0 0 20px #00f7ff33;
-    }
-
-    h1 {
-      color: #00f7ff;
-      margin-bottom: 20px;
-    }
-
-    .coupon {
-      font-size: 1.2em;
-      background-color: #292932;
-      padding: 15px;
-      border-radius: 8px;
-      border: 1px dashed #00f7ff;
-      margin-bottom: 25px;
-    }
-
-    .accept-btn {
-      background-color: #00f7ff;
-      color: #0b0b0e;
-      padding: 12px 30px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .accept-btn:hover {
-      background-color: #00b7cc;
-    }
-
-    .note {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voids Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 2px solid #0ff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: #0f0f0f;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #0ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #111, #222);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #aaa;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .product-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            border-color: #0ff;
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            background: #0f0f0f;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Void-Corp™ Coupon Acceptance</h1>
-    <p class="coupon">Coupon: <strong>LIFETIME-ATOMICS</strong></p>
-    <p>You are redeeming a Lifetime Supply of <strong>Void-Corp Atomics Dark Matter Fuel Cells</strong><br>for the discounted price of <strong>$12.99</strong>.</p>
-    <button class="accept-btn" onclick="acceptCoupon()">Accept Coupon</button>
-    <p class="note">This action is final. You cannot unbind from the Void-Corp contract after submission.</p>
-  </div>
+    <header>Voids Electronics</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-  <script>
-    function acceptCoupon() {
-      alert("Coupon accepted. Shipment of fuel cells initiated.\nYou are now bound to Void-Corp™ Eternal Customer Agreement #8292-B.");
-    }
-  </script>
+    <div class="hero">
+        <h1>Innovating For The World.</h1>
+        <p>Electronics for the Next Frontier</p>
+    </div>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200x150?text=VoidCore+X900" alt="VoidCore X900">
+            <h3>VoidCore X900 Processor</h3>
+            <p>Unleash unparalleled speed and efficiency.</p>
+            <p>$499.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200x150?text=BlackMatter+PSU" alt="BlackMatter PSU">
+            <h3>BlackMatter PSU 1500W</h3>
+            <p>Stable power, even in the unknown.</p>
+            <p>$249.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200x150?text=QuantumLink+Router" alt="QuantumLink Router">
+            <h3>VirtualLink Router</h3>
+            <p>Beyond speed — instant connectivity.</p>
+            <p>$199.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200x150?text=HollowVision+Display" alt="HollowVision Display">
+            <h3>HollowVision Display Panel</h3>
+            <p>Visuals from another dimension.</p>
+            <p>$799.99</p>
+        </div>
+    </section>
+
+    <div class="footer">
+        &copy; 2025 Voids Electronics. All rights reserved. | Terms | Privacy | Careers
+    </div>
+</body>
+</html>
+
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Voids Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Same CSS as index.html */
+    </style>
+</head>
+<body>
+    <header>Voids Electronics</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h1>Our Products</h1>
+        <p>Explore our range of cutting-edge electronics designed to push the boundaries of innovation.</p>
+        <!-- You can reuse product cards here -->
+    </div>
+</body>
+</html>
+
+<!-- support.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Voids Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Same CSS as index.html */
+    </style>
+</head>
+<body>
+    <header>Voids Electronics</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h1>Support Center</h1>
+        <p>Search our knowledge base or contact support for assistance.</p>
+        <input type="text" placeholder="Search support articles..." style="width: 100%; padding: 10px;">
+        <ul>
+            <li><a href="#">Download Drivers</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Voids Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Same CSS as index.html */
+    </style>
+</head>
+<body>
+    <header>Voids Electronics</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Founded in 1982, Voids Electronics has been at the forefront of experimental computing hardware, pushing the limits of silicon and shadow technology.</p>
+    </div>
+</body>
+</html>
+
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Voids Electronics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Same CSS as index.html */
+    </style>
+</head>
+<body>
+    <header>Voids Electronics</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our support or corporate teams.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+            <textarea placeholder="Your Message" rows="5" style="width: 100%; padding: 10px;"></textarea>
+            <button type="submit" style="padding: 10px 20px; margin-top: 10px; background: #0ff; border: none; cursor: pointer;">Send Message</button>
+        </form>
+    </div>
 </body>
 </html>
